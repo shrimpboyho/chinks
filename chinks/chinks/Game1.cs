@@ -20,6 +20,9 @@ namespace chinks
         SpriteBatch spriteBatch;
         Vector2 mPosition = new Vector2(0, 0);
         Texture2D mSpriteTexture;
+        KeyboardState oldState;
+        float keyjunk = 0;
+        float keyjunk2 = 0;
 
         public Game1()
         {
@@ -44,14 +47,23 @@ namespace chinks
         /// LoadContent will be called once per game and is the place to load
         /// all of your content.
         /// </summary>
+        /// 
+        // Set the 3D model to draw.
+        Model myModel;
+
+        // The aspect ratio determines how to scale 3d to 2d projection.
+        float aspectRatio;
+
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            mSpriteTexture = this.Content.Load<Texture2D>("starrynight");
+            mSpriteTexture = this.Content.Load<Texture2D>("shinning-stars-space-background");
 
+            myModel = Content.Load<Model>("Models\\p1_wedge");
+            aspectRatio = graphics.GraphicsDevice.Viewport.AspectRatio;
 
         }
 
@@ -75,15 +87,92 @@ namespace chinks
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            UpdateInput();
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
 
+        private void UpdateInput()
+        {
+            KeyboardState newState = Keyboard.GetState();
+            
+
+            // Is the Right key down?
+            if (newState.IsKeyDown(Keys.Right))
+            {
+                // If not down last update, key has just been pressed.
+                if (!oldState.IsKeyDown(Keys.Left))
+                {
+                    keyjunk = keyjunk + 30;
+                    cameraPosition.Z = keyjunk;
+                    
+                    
+                }
+            }
+
+            // Is the left key down?
+            if (newState.IsKeyDown(Keys.Left))
+            {
+                // If not down last update, key has just been pressed.
+                if (!oldState.IsKeyDown(Keys.Right))
+                {
+                    keyjunk = keyjunk -30;
+                    cameraPosition.Z = keyjunk;
+
+
+                }
+            }
+
+            // Is the up key down?
+            if (newState.IsKeyDown(Keys.Up))
+            {
+                // If not down last update, key has just been pressed.
+                if (!oldState.IsKeyDown(Keys.Down))
+                {
+                    keyjunk2 = keyjunk2 - 30;
+                    cameraPosition.X = keyjunk2;
+
+
+                }
+            }
+
+            // Is the down key down?
+            if (newState.IsKeyDown(Keys.Down))
+            {
+                // If not down last update, key has just been pressed.
+                if (!oldState.IsKeyDown(Keys.Up))
+                {
+                    keyjunk2 = keyjunk2 + 30;
+                    cameraPosition.X = keyjunk2;
+
+
+                }
+            }
+            else if (oldState.IsKeyDown(Keys.Space))
+            {
+                // Key was down last update, but not down now, so
+                // it has just been released.
+            }
+
+            // Update saved state.
+            oldState = newState;
+        }
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        /// 
+
+        // Set the position of the model in world space, and set the rotation.
+        Vector3 modelPosition = Vector3.Zero;
+        float modelRotation = 0.0f;
+
+        // Set the position of the camera in world space, for our view matrix.
+        Vector3 cameraPosition = new Vector3(5000.0f, 90.0f, 500.0f);
+
+
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -93,8 +182,34 @@ namespace chinks
             spriteBatch.Draw(mSpriteTexture, mPosition, Color.White);
             spriteBatch.End();
 
-            base.Draw(gameTime);
+            // Copy any parent transforms.
+            Matrix[] transforms = new Matrix[myModel.Bones.Count];
+            myModel.CopyAbsoluteBoneTransformsTo(transforms);
+
+            // Draw the model. A model can have multiple meshes, so loop.
+            foreach (ModelMesh mesh in myModel.Meshes)
+            {
+                // This is where the mesh orientation is set, as well 
+                // as our camera and projection.
+                foreach (BasicEffect effect in mesh.Effects)
+                {
+                    effect.EnableDefaultLighting();
+                    effect.World = transforms[mesh.ParentBone.Index] *
+                        Matrix.CreateRotationY(modelRotation)
+                        * Matrix.CreateTranslation(modelPosition);
+                    effect.View = Matrix.CreateLookAt(cameraPosition,
+                        Vector3.Zero, Vector3.Up);
+                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(
+                        MathHelper.ToRadians(45.0f), aspectRatio,
+                        1.0f, 10000.0f);
+                }
+                // Draw the mesh, using the effects set above.
+                mesh.Draw();
+            }
+
             base.Draw(gameTime);
         }
+
+        
     }
 }

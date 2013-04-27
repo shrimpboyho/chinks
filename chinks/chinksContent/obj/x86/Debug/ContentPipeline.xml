@@ -1,14 +1,314 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>starrynight.png</Source>
-      <Name>starrynight</Name>
+      <Source>Textures\wedge_p1_diff_v1.tga</Source>
+      <Name>Textures\wedge_p1_diff_v1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\starrynight.xnb</Output>
-      <Time>2013-04-25T20:08:20.7130219-04:00</Time>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\Textures\wedge_p1_diff_v1.xnb</Output>
+      <Time>2013-04-26T08:45:18.3345001-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\p1_wedge.fbx</Source>
+      <Name>Models\p1_wedge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\Models\p1_wedge.xnb</Output>
+      <Time>2013-04-26T08:45:18.3345001-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\p1_wedge_0.xml</Key>
+        <Value>2013-04-26T08:46:00.2407501-04:00</Value>
+      </Dependency>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\textures\wedge_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\p1_wedge.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\p1_wedge_0.xml</Output>
+      <Time>2013-04-26T08:45:18.3345001-04:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\wedge_p1_diff_v1.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\textures\wedge_p1_diff_v1_0.xnb</Output>
+      <Time>2013-04-26T08:45:18.3345001-04:00</Time>
+    </Item>
+    <Item>
+      <Source>shinning-stars-space-background.jpg</Source>
+      <Name>shinning-stars-space-background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\shinning-stars-space-background.xnb</Output>
+      <Time>2013-04-26T09:13:43.3188751-04:00</Time>
+    </Item>
+    <Item>
+      <Source>door35.jpg</Source>
+      <Name>door35</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\door35.xnb</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>fw42b.jpg</Source>
+      <Name>fw42b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\fw42b.xnb</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>leafs.jpg</Source>
+      <Name>leafs</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\leafs.xnb</Output>
+      <Time>2013-04-26T16:10:39.5978233-04:00</Time>
+    </Item>
+    <Item>
+      <Source>m1.jpg</Source>
+      <Name>m1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\m1.xnb</Output>
+      <Time>2013-04-26T16:10:39.6134483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>stoned.jpg</Source>
+      <Name>stoned</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\stoned.xnb</Output>
+      <Time>2013-04-26T16:10:39.6134483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wall1.jpg</Source>
+      <Name>wall1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall1.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wall7.jpg</Source>
+      <Name>wall7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall7.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>window22.jpg</Source>
+      <Name>window22</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\window22.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wood_1B.jpg</Source>
+      <Name>wood_1B</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wood_1B.xnb</Output>
+      <Time>2013-04-26T16:10:39.6446983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>fw43_lowpoly_n1.x</Source>
+      <Name>fw43_lowpoly_n1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\fw43_lowpoly_n1.xnb</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\fw43_lowpoly_n1_0.xml</Key>
+        <Value>2013-04-26T16:11:16.8009483-04:00</Value>
+      </Dependency>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall7_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wood_1B_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\fw42b_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall1_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\stoned_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\window22_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\door35_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\leafs_0.xnb</Request>
+      <Request>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\m1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>fw43_lowpoly_n1.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\fw43_lowpoly_n1_0.xml</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wall7.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall7_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wood_1B.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wood_1B_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6446983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>fw42b.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\fw42b_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>wall1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\wall1_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>stoned.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\stoned_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6134483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>window22.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\window22_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6290733-04:00</Time>
+    </Item>
+    <Item>
+      <Source>door35.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\door35_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.5821983-04:00</Time>
+    </Item>
+    <Item>
+      <Source>leafs.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\leafs_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.5978233-04:00</Time>
+    </Item>
+    <Item>
+      <Source>m1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Documents and Settings\Administrator.ESUMSROBOTICSLA\My Documents\Visual Studio 2010\Projects\chinks\chinks\chinks\bin\x86\Debug\Content\m1_0.xnb</Output>
+      <Time>2013-04-26T16:10:39.6134483-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
